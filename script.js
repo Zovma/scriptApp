@@ -6,7 +6,7 @@ const jsonParser = express.json();
 const XlsxPopulate = require('xlsx-populate');
 const fs = require('fs');
 
-app.use(express.static(path.join(__dirname + './client/build/static/script')));
+app.use(express.static(__dirname + "/public"));
 
 
 app.get("/script", function (request, response) {
