@@ -8,8 +8,8 @@ const fs = require('fs');
 
 // app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/script', function (req, res) {
-  res.sendFile(path.join(__dirname + '/client/', 'build', 'index.html'));
+app.get('/script', function (request, response) {
+  response.sendFile(__dirname + "/client/build/index.html");
 });
 
 app.get('/client/build/static/css/main.c3ad2097.chunk.css', function (request, response) {
