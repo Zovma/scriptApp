@@ -145,9 +145,9 @@ function App() {
         setFurther(further = 'Завершить')
         pushHistory()
     }
-    console.log(state)
-    console.log(history);
-    console.log(dataScript);
+    // console.log(state)
+    // console.log(history);
+    // console.log(dataScript);
 
   }
 
@@ -202,7 +202,7 @@ function App() {
       case 'bye':
         return <Bye mail = {dataScript.mail}/>;
       default:
-        console.log('default')
+        console.log('eror')
     }
   }
 
@@ -231,7 +231,7 @@ function App() {
       }
 
     }
-    console.log(dataScript);
+    // console.log(dataScript);
   }
 
   function delBtn() {

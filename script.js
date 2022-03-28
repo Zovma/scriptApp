@@ -6,12 +6,10 @@ const jsonParser = express.json();
 const XlsxPopulate = require('xlsx-populate');
 const fs = require('fs');
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname + '/client/', 'build')));
 
-
-app.get("/script", function (request, response) {
-
-  response.sendFile(__dirname + "/client/build/index.html");
+app.get('/script', function (req, res) {
+  res.sendFile(path.join(__dirname + '/client/', 'build', 'index.html'));
 });
 
 app.post("/dataScript", jsonParser, function (request, response) {
