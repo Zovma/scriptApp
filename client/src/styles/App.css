@@ -3,8 +3,6 @@
     font-family: monospace;
 }
 
-
-
 #root {
     background-color: white;
     margin: 2em auto 0 auto;
@@ -56,4 +54,8 @@ input[type="radio"] {
 .example{
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.btn button:last-child {
+    margin-left: 10px;
 }

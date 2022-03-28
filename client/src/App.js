@@ -216,6 +216,9 @@ function App() {
 
   function back() {
     let copy = Object.assign([], history);
+    if (copy[copy.length - 1] !== 'finish') {
+      setFurther(further = 'Далее');
+    }
     setState(state = copy[copy.length - 2]);
     copy.pop()
     setHistory(copy)
