@@ -4,7 +4,7 @@
   "description": "node js, react",
   "main": "script.js",
   "scripts": {
-    "start": "node script.js",
+    "start": "nodemon script.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
@@ -15,5 +15,8 @@
     "xlsx-populate": "^1.21.0"
   },
   "author": "Dmitrii Borzov <dim.borzov@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
