@@ -1,0 +1,59 @@
+* {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+
+
+#root {
+    background-color: white;
+    margin: 2em auto 0 auto;
+    max-width: 800px;
+    padding: 0 3em 0 3em;
+    border: 0;
+}
+
+input {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 100%;
+    outline: none;
+    margin: 1em 0 1em 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.noBorder{
+    padding: 2em 2em 2em 2em;
+}
+
+.border {
+    border: 1px solid rgba(128, 128, 128, 0.462);
+    padding: 2em 2em 2em 2em;
+    border-radius: 8px;
+    margin: 0 0 1em 0;
+    width: 100%;
+    background-color: white;
+}
+
+
+span {
+    font-size: 15px;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 1%;
+}
+
+.example{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
