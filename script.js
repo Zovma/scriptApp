@@ -6,11 +6,24 @@ const jsonParser = express.json();
 const XlsxPopulate = require('xlsx-populate');
 const fs = require('fs');
 
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/script', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname + '/client/', 'build', 'index.html'));
 });
+
+app.get('/client/build/static/css/main.c3ad2097.chunk.css', function (request, response) {
+  response.sendFile(__dirname + "/client/build/static/css/main.c3ad2097.chunk.css");
+});
+
+app.get('/client/build/static/js/1.a3c0bc64.chunk.js', function (request, response) {
+  response.sendFile(__dirname + "/client/build/static/js/1.a3c0bc64.chunk.js");
+});
+
+app.get('/client/build/static/js/main.e52975e3.chunk.js', function (request, response) {
+  response.sendFile(__dirname + "/client/build/static/js/main.e52975e3.chunk.js");
+});
+
 app.post("/dataScript", jsonParser, function (request, response) {
   console.log('Пришёл post');
   if (!request.body) return response.sendStatus(400);
