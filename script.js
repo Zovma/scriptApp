@@ -9,7 +9,7 @@ const fs = require('fs');
 // app.use(express.static(path.join(__dirname, 'build')));
 
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use("/script", express.static(path.join(__dirname, 'build')));
 
 app.get('/script', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
